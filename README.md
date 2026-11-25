@@ -101,17 +101,3 @@ calculo_numerico_app/
     └── test_metodos.py           # testes automatizados dos métodos
 ```
 
-A interface não contém as fórmulas dos métodos: ela coleta os dados, converte as entradas, chama as funções da camada `calculo_numerico` e exibe o resultado. Essa separação evita duplicação e facilita explicar, testar e manter o projeto.
-
-## 7. Relação com os seis capítulos enviados
-
-- **Capítulo 1 – Noções Básicas sobre Erros:** orienta a interpretação dos resultados como aproximações em aritmética de ponto flutuante, e justifica validar entradas e apresentar tolerâncias.
-- **Capítulo 2 – Zeros de Funções Reais:** fundamenta os quatro métodos de raízes e a importância de localização, refinamento e critérios de parada.
-- **Capítulo 3 – Resolução de Sistemas Lineares:** fundamenta eliminação de Gauss, fatoração LU, substituições e Gauss-Seidel. A implementação usa pivoteamento parcial em Gauss e uma forma pivotada da fatoração (`P·A = L·U`) para lidar com pivôs pequenos ou nulos.
-- **Capítulo 4 – Interpolação:** fundamenta as formas de Lagrange e Newton, com diferenças divididas.
-- **Capítulo 5 – Integração Numérica:** fundamenta trapézios e Simpson compostos. A opção de dados discretos aplica as mesmas ideias diretamente a valores tabelados, sem supor uma expressão conhecida para `f(x)`.
-- **Capítulo 6 – Ajuste de Curvas por Quadrados Mínimos:** foi analisado, mas não incluído como método adicional porque não aparece na lista de métodos exigidos pelo enunciado. O “caso discreto” da entrega é o de integração com dados tabelados, não o ajuste discreto de mínimos quadrados deste capítulo.
-
-## 8. Observação para a apresentação
-
-Demonstre ao menos um exemplo de cada grupo. Ao explicar, destaque a diferença entre métodos diretos e iterativos, as hipóteses de cada método, as validações feitas antes do cálculo e a tabela de iterações/valores intermediários exibida pela interface.
